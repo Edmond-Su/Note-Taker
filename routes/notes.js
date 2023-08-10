@@ -13,7 +13,7 @@ notes.get('/', (req, res) => {
     }
 
 });
-
+// Delete route to delete a note using given note id
 notes.delete('/:note_id', (req, res) => {
     if (req.params.note_id) {
         console.info(`${req.method} request received for a note`);
